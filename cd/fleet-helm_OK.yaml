@@ -1,0 +1,22 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: testdl-bouquet-services
+  namespace: fleet-default
+spec:
+  branch: master
+  insecureSkipTLSVerify: true
+  repo: https://github.com/dleseigneur/bugrancher2.6.5.git
+  paths:
+#  - multi-cluster/kustomize
+  - cd/service-s3
+  targets:
+  - name: dev
+    clusterSelector:
+      matchLabels:
+        env: dev
+
+  - name: test
+    clusterSelector:
+      matchLabels:
+        env: test

@@ -1,0 +1,10 @@
+auth:
+  ## @param auth.rootUser MinIO&reg; root username
+  ##
+  rootUser: admindev
+  ## @param auth.rootPassword Password for MinIO&reg; root user
+  ##
+  rootPassword: "758SBZzGgd"
+defaultBuckets: "dev01"
+image:
+  tag: 2022.5.19-debian-10-r2

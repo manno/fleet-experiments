@@ -1,0 +1,24 @@
+namespace: fleet-mc-helm-external-example
+helm:
+  chart: minio
+  version: 11.3.4
+  repo: https://charts.bitnami.com/bitnami
+  valuesFiles: 
+    - values-commun.yaml
+
+targetCustomizations:
+- name: dev
+  helm:
+    valuesFiles: 
+      - values-dev.yaml
+  clusterSelector:
+    matchLabels:
+      env: dev
+
+- name: test
+  helm:
+    valuesFiles: 
+      - values-test.yaml
+  clusterSelector:
+    matchLabels:
+      env: test
