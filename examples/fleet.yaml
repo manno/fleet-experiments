@@ -5,8 +5,8 @@ helm:
 
 diff:
   comparePatches:
-    - apiVersion: v1
-      kind: Service
-      name: sleeper
-      operations:
-      - {"op":"remove", "path":"/spec/ports"}
+  - apiVersion: v1
+    kind: Service
+    name: sleeper
+    operations:
+    - {"op":"remove", "path":"/spec/ports"}

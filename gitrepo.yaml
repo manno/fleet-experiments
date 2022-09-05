@@ -1,9 +1,9 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: testing
+  name: testing1
 spec:
   repo: https://github.com/manno/fleet-experiments
-  branch: main
+  branch: diff-experiment1
   paths:
   - examples
