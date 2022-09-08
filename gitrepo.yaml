@@ -1,9 +1,16 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: testing2
+  name: long-name-test
 spec:
   repo: https://github.com/manno/fleet-experiments
-  branch: diff-experiment2
+  branch: long-experiment1
   paths:
-  - examples
+  - shortpath
+  - shortpathwith@char
+  - shortpath-with+char
+  - longpathwithmorecharactersthanyouwouldeverexpectinagitrepopath
+  - longpathwithmorecharactersthanyouwouldeverexpectinagitrepopathpart2
+  - customhelmreleasename
+  - customspecialhelmreleasename
+  - funcharts
