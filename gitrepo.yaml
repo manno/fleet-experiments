@@ -7,10 +7,11 @@ spec:
   branch: long-experiment1
   paths:
   - shortpath
-  - shortpathwith@char
+  - shortpath-with@char
   - shortpath-with+char
   - longpathwithmorecharactersthanyouwouldeverexpectinagitrepopath
   - longpathwithmorecharactersthanyouwouldeverexpectinagitrepopathpart2
   - customhelmreleasename
   - customspecialhelmreleasename
-  - funcharts
+  - funcharts/-App_-_12.factor
+  - funcharts/0.App_
