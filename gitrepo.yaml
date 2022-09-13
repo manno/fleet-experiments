@@ -1,17 +1,9 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: long-name-test
+  name: nest-test
 spec:
   repo: https://github.com/manno/fleet-experiments
-  branch: long-experiment1
+  branch: nested-paths
   paths:
-  - shortpath
-  - shortpath-with@char
-  - shortpath-with+char
-  - longpathwithmorecharactersthanyouwouldeverexpectinagitrepopath
-  - longpathwithmorecharactersthanyouwouldeverexpectinagitrepopathpart2
-  - customhelmreleasename
-  - customspecialhelmreleasename
-  - funcharts/-App_-_12.factor
-  - funcharts/0.App_
+    - nested
