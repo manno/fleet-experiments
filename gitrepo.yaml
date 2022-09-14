@@ -1,9 +1,16 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: testing2
+  name: cluster-labels-test
 spec:
   repo: https://github.com/manno/fleet-experiments
-  branch: diff-experiment2
+  branch: cluster-labels
   paths:
-  - examples
+    - errapplied
+  targets:
+  - clusterSelector:
+      matchExpressions:
+      - key: provider.cattle.io
+        operator: NotIn
+        values:
+        - harvester

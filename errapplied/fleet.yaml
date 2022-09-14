@@ -1,9 +1,9 @@
 helm:
-  releaseName: simple-chart
+  releaseName: errapplied-chart
   chart: ../charts/simple-chart
   values:
     local:
-      clusterEnv: global.fleet.clusterLabels.env
+      clusterEnv: global.fleet.clusterLabels.NONEXISTANT
       sprig: |-
           {{ default .ClusterLabels.env "empty" }}
       goindex: |-
