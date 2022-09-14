@@ -1,0 +1,21 @@
+defaultNamespace: test-ns
+
+helm:
+  releaseName: fleet-test
+  valuesFiles:
+    - values.yaml
+
+# targetCustomizations:
+# - name: fleet-test
+#   defaultNamespace: test-ns
+#   clusterSelector:
+#     matchLabels:
+#       fleet.cattle.io/cluster-name: kuba-cluster
+
+diff:
+  comparePatches:
+    - apiVersion: v1
+      kind: ConfigMap
+      name: app-config
+      operations:
+      - {"op":"remove", "path":"data"}
