@@ -18,4 +18,4 @@ diff:
       kind: ConfigMap
       name: app-config
       operations:
-      - {"op":"remove", "path":"data"}
+      - {"op":"remove", "path":"/data"}
