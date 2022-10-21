@@ -1,6 +1,6 @@
 helm:
   releaseName: errapplied-chart
-  chart: ../charts/simple-chart
+  chart: ./simple-chart
   values:
     local:
       clusterEnv: global.fleet.clusterLabels.NONEXISTANT

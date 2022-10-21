@@ -1,6 +1,6 @@
 helm:
-  releaseName: simple-chart
-  chart: ../charts/simple-chart
+  releaseName: yamlerr-chart
+  chart: ./simple-chart
   values:
     local:
       clusterEnv: global.fleet.clusterLabels.env
