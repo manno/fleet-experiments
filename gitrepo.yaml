@@ -3,18 +3,9 @@ apiVersion: fleet.cattle.io/v1alpha1
 metadata:
   name: long-name-test
 spec:
-  repo: https://github.com/rancher/fleet-examples
-  branch: experiment-bundle-names
+  repo: https://github.com/manno/fleet-experiments
+  branch: long-custom-name
   paths:
-  - shortpath
-    # collision strip chars:
-  - shortpath-with@char
-  - shortpath-with+char
-    # collision long name:
-  - longpathwithmorecharactersthanyouwouldeverexpectinagitrepopath
-  - longpathwithmorecharactersthanyouwouldeverexpectinagitrepopathpart2
-    # possible collision via duplicate release names:
   - customhelmreleasename
   - customspecialhelmreleasename
-  - funcharts
-  - "-"
+  - customspecialhelmreleasename2
