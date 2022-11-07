@@ -1,16 +1,20 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: cluster-labels-test
+  name: long-name-test
 spec:
-  repo: https://github.com/manno/fleet-experiments
-  branch: cluster-labels
+  repo: https://github.com/rancher/fleet-examples
+  branch: experiment-bundle-names
   paths:
-    - errapplied
-  targets:
-  - clusterSelector:
-      matchExpressions:
-      - key: provider.cattle.io
-        operator: NotIn
-        values:
-        - harvester
+  - shortpath
+    # collision strip chars:
+  - shortpath-with@char
+  - shortpath-with+char
+    # collision long name:
+  - longpathwithmorecharactersthanyouwouldeverexpectinagitrepopath
+  - longpathwithmorecharactersthanyouwouldeverexpectinagitrepopathpart2
+    # possible collision via duplicate release names:
+  - customhelmreleasename
+  - customspecialhelmreleasename
+  - funcharts
+  - "-"
