@@ -1,3 +1,0 @@
-namespace: workloadns1
-helm:
-  releaseName: simplerelname012345689012345689012345678901234567890

@@ -1,0 +1,3 @@
+defaultNamespace: test1
+helm:
+  releaseName: parentchart

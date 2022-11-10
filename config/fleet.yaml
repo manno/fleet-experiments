@@ -1,0 +1,17 @@
+defaultNamespace: workloadns5082
+helm:
+  releaseName: ingress-config
+
+targetCustomizations:
+- clusterSelector:
+    matchLabels:
+      name: local
+  yaml:
+    overlays:
+    - local
+- clusterSelector:
+    matchLabels:
+      env: dev
+  yaml:
+    overlays:
+    - dev

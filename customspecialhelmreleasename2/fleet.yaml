@@ -1,3 +1,0 @@
-namespace: workloadns3
-helm:
-  releaseName: r

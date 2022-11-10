@@ -1,11 +1,7 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: long-name-test
+  name: templatelost-test
 spec:
   repo: https://github.com/manno/fleet-experiments
-  branch: long-custom-name
-  paths:
-  - customhelmreleasename
-  - customspecialhelmreleasename
-  - customspecialhelmreleasename2
+  branch: templatelost
