@@ -5,3 +5,10 @@ metadata:
 spec:
   repo: https://github.com/manno/fleet-experiments
   branch: templatelost
+  targets:
+  - clusterSelector:
+      matchExpressions:
+      - key: provider.cattle.io
+        operator: NotIn
+        values:
+        - harvester
