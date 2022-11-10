@@ -1,4 +1,6 @@
 defaultNamespace: workloadns5082
+# this is a manifest-style bundle, we just set the name for the final helm release.
+# we're still allowed to use YAML overlays (helm-style bundles are not).
 helm:
   releaseName: ingress-config
 
