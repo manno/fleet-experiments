@@ -1,3 +1,8 @@
-defaultNamespace: test1
+defaultNamespace: datadog
 helm:
-  releaseName: parentchart
+  repo: https://helm.datadoghq.com
+  chart: datadog
+  releaseName: datadog
+  values:
+    datadog:
+      clusterName: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
