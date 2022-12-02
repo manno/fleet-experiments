@@ -4,6 +4,6 @@ metadata:
   name: testing
 spec:
   repo: https://github.com/manno/fleet-experiments
-  branch: main
+  branch: kustomize
   paths:
-  - examples
+  - kustomize

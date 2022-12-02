@@ -1,0 +1,9 @@
+namespace: fleet-kustomize-example
+
+helm:
+  releaseName: thisishelm
+  values:
+    helm: helmvalue
+
+kustomize:
+  dir: ""
