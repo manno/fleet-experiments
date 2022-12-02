@@ -4,4 +4,4 @@ metadata:
   name: app-config
 data:
   test: "value"
-  helmvalue: {{ .Values.Helm }}
+  helmvalue: "{{ .Values.Helm }}"
