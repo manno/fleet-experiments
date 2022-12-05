@@ -3,7 +3,7 @@ defaultNamespace: test-operator
 diff:
   comparePatches:
     - apiVersion: v1
-      kind: Service
-      name: not-sure-yet
+      kind: Secret
+      name: fleet-ca-root
       operations:
-      - {"op":"remove", "path":"/spec/ports"}
+      - {"op":"remove", "path":"/data"}
