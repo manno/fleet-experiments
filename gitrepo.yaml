@@ -7,6 +7,7 @@ spec:
   repo: https://github.com/manno/fleet-experiments
   branch: bundle-diff-objs
   paths:
+  - cert-manager
   - operator
-  #- ignoredelete
   - job
+  #- ignoredelete
