@@ -2,8 +2,11 @@ kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
   name: testing
+  namespace: fleet-local
 spec:
   repo: https://github.com/manno/fleet-experiments
-  branch: main
+  branch: bundle-diff-objs
   paths:
-  - examples
+  - operator
+  #- ignoredelete
+  - job
