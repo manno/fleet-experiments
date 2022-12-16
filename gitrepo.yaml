@@ -5,9 +5,7 @@ metadata:
   namespace: fleet-local
 spec:
   repo: https://github.com/manno/fleet-experiments
-  branch: bundle-diff-objs
+  branch: gitrepo-labels
   paths:
-  - cert-manager
-  - operator
-  - job
+  - simple
   #- ignoredelete

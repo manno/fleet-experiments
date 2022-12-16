@@ -1,7 +1,0 @@
-diff:
-  comparePatches:
-    - apiVersion: v1
-      kind: ConfigMap
-      name: test-ignoredelete
-      operations:
-      - {"op":"remove", "path":"/"}

@@ -1,8 +1,7 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: test-ignoredelete
-  namespace: test-ignore
+  name: test-config
 data:
   config: |-
     test
