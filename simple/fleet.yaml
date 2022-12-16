@@ -2,3 +2,4 @@ labels:
   labelfrom: yaml
   x: "y"
   more: labels
+  update: label
