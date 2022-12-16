@@ -1,9 +1,0 @@
-defaultNamespace: test-operator
-
-diff:
-  comparePatches:
-    - apiVersion: v1
-      kind: Secret
-      name: fleet-ca-root
-      operations:
-      - {"op":"remove", "path":"/data"}
