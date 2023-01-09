@@ -1,2 +1,2 @@
-global:
-  storageClass: ""
+persistence:
+  enabled: false
