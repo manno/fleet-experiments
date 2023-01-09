@@ -1,7 +1,7 @@
 namespace: fleet-mc-helm-external-example
 helm:
   chart: minio
-  version: 11.3.4
+  version: 11.10.24
   repo: https://charts.bitnami.com/bitnami
   valuesFiles: 
     - values-commun.yaml
