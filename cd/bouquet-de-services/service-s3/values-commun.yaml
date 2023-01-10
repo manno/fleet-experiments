@@ -1,2 +1,4 @@
-persistence:
-  enabled: false
+# persistence:
+#   enabled: false
+global:
+  storageClass: "longhorn"
