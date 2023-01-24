@@ -4,9 +4,9 @@ metadata:
   name: testdl-bouquet-services
   namespace: fleet-default
 spec:
-  branch: master
+  branch: bugrancher2.6.5
   insecureSkipTLSVerify: true
-  repo: https://github.com/dleseigneur/bugrancher2.6.5.git
+  repo: https://github.com/manno/fleet-experiments
   paths:
 #  - multi-cluster/kustomize
   - cd/service-s3
