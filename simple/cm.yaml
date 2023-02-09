@@ -1,8 +1,0 @@
-kind: ConfigMap
-apiVersion: v1
-metadata:
-  name: test-config
-data:
-  config: |-
-    test
-    more

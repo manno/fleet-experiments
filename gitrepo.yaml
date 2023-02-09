@@ -1,11 +1,18 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: testing
-  namespace: fleet-local
+  name: cert-manager
+
 spec:
   repo: https://github.com/manno/fleet-experiments
-  branch: gitrepo-labels
+  branch: cert-manager
   paths:
-  - simple
-  #- ignoredelete
+  - cert-manager
+
+  targets:
+  - clusterSelector:
+      matchExpressions:
+      - key: provider.cattle.io
+        operator: NotIn
+        values:
+        - harvester
