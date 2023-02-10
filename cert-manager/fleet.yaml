@@ -1,4 +1,0 @@
-helm:
-  chart: https://charts.jetstack.io/charts/cert-manager-v1.11.0.tgz
-  values:
-    installCRDs: true

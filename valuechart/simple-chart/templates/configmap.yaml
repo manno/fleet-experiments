@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spoileralert
+data:
+  name: {{ .Values.name }}
+  supername: {{ .Values.supername }}
