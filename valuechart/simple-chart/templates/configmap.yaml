@@ -5,3 +5,4 @@ metadata:
 data:
   name: {{ .Values.name }}
   supername: {{ .Values.supername }}
+  longmamesupername: {{ .Values.longnames.english.name }}

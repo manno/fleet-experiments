@@ -1,9 +1,9 @@
 helm:
   chart: simple-chart
-  values:
-    name: clark k.
   valuesFrom:
     - secretKeyRef:
         name: mysecret
         namespace: default
         key: values.yaml
+  values:
+    name: clark k.
