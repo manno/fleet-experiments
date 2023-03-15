@@ -8,4 +8,6 @@ helm:
   values:
     name: clark k.
     # override secret?
-    longnames: {}
+    longnames:
+      english:
+        name: original
