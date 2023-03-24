@@ -1,11 +1,11 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: values-from
+  name: values-from2
 
 spec:
   repo: https://github.com/manno/fleet-experiments
-  branch: valuesFrom
+  branch: valuesFrom2
   paths:
   - valuechart
 

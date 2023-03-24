@@ -13,3 +13,35 @@ helm:
 
   values:
     replicaCount: 1
+
+targetCustomizations:
+- name: localcluster1
+  helm:
+    values:
+      ingress:
+        hosts:
+          - host: local.intra
+        paths:
+        - /
+        tls:
+          - secretName: cert
+            hosts:
+              -  local.intra
+  clusterSelector:
+    matchLabels:
+      management.cattle.io/cluster-display-name: local
+- name: cluster2
+  helm:
+    values:
+      ingress:
+        hosts:
+          - host: test.intra
+        paths:
+        - /
+        tls:
+          - secretName: cert
+            hosts:
+              -  test.intra
+  clusterSelector:
+    matchLabels:
+      management.cattle.io/cluster-name: c-yyyyy
