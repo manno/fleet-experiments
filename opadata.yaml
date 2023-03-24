@@ -1,0 +1,4 @@
+config:
+  preferredURLScheme: https
+  logLevel: info
+  secretKey: xxxxxx

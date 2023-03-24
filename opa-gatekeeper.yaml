@@ -1,0 +1,19 @@
+# kubectl create secret -n cattle-gatekeeper-system generic clusterconfig --from-file=values.yaml=opadata.yaml
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: opa-gatekeeper
+
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: valuesFrom
+  paths:
+  - opa
+
+  targets:
+  - clusterSelector:
+      matchExpressions:
+      - key: provider.cattle.io
+        operator: NotIn
+        values:
+        - harvester
