@@ -1,0 +1,15 @@
+defaultNamespace: cattle-gatekeeper-system
+
+helm:
+  chart: https://github.com/sighupio/gatekeeper-policy-manager/releases/download/gatekeeper-policy-manager-0.4.1/gatekeeper-policy-manager-0.4.1.tgz
+  releaseName: gatekeeper-policy-manager
+
+  # `config` section which contains sensitive data
+  valuesFrom:
+  - secretKeyRef:
+      name: clusterconfig
+      namespace: cattle-gatekeeper-system
+      key: values.yaml
+
+  values:
+    replicaCount: 1
