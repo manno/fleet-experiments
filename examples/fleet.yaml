@@ -1,12 +1,4 @@
-namespace: test
+namespace: test-crds
 
 helm:
   chart: sleeper-chart
-
-diff:
-  comparePatches:
-    - apiVersion: v1
-      kind: Service
-      name: sleeper
-      operations:
-      - {"op":"remove", "path":"/spec/ports"}
