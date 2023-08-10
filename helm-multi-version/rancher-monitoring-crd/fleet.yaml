@@ -1,0 +1,26 @@
+defaultNamespace: cattle-monitoring-system
+helm:
+  releaseName: rancher-monitoring-crd
+  chart: rancher-monitoring-crd
+  repo: https://charts.rancher.io
+  version: 100.1.2+up19.0.3
+
+targetCustomizations:
+- name: prod
+  clusterSelector:
+    matchLabels:
+      env: prod
+  helm:
+    version: 100.2.0+up40.1.2
+- name: dev
+  clusterSelector:
+    matchLabels:
+      env: dev
+  helm:
+    version: 102.0.1+up40.1.2
+- name: test
+  clusterSelector:
+    matchLabels:
+      env: test
+  # fleet 0.8.x feature: deny deployment to test cluster
+  doNotDeploy: true
