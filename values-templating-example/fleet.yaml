@@ -1,0 +1,6 @@
+helm:
+  chart: config-chart
+  values:
+    fixedValue: example-value
+    templatedValue: ${ get .ClusterLabels "management.cattle.io/cluster-display-name" | lower }
+    labelsMap: ${ toPrettyJson .ClusterLabels }
