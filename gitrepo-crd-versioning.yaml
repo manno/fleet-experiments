@@ -1,11 +1,11 @@
 kind: GitRepo
 apiVersion: fleet.cattle.io/v1alpha1
 metadata:
-  name: rollout-experiment
+  name: crd-experiment
 spec:
   repo: https://github.com/manno/fleet-experiments
   branch: main
   paths:
-    - rollout
+    - crd-versioning
   targets:
     - clusterSelector: {}

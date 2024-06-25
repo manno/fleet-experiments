@@ -1,0 +1,8 @@
+
+diff:
+  comparePatches:
+    -
+      apiVersion: day3.cloud/v1beta1
+      kind: Process
+      name: process-sample-3
+      operations: [{"op": "remove", "path": "/spec/value"}]
