@@ -6,3 +6,8 @@ diff:
       kind: Process
       name: process-sample-3
       operations: [{"op": "remove", "path": "/spec/value"}]
+    -
+      apiVersion: day3.cloud/v1alpha2
+      kind: Process
+      name: process-sample-2
+      operations: [{"op": "remove", "path": "/spec/value"}]
