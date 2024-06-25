@@ -1,0 +1,23 @@
+# not served anymore:
+# ---
+# apiVersion: day3.cloud/v1alpha1
+# kind: Process
+# metadata:
+#   name: process-sample-1
+# spec:
+#   value: any1
+
+---
+apiVersion: day3.cloud/v1alpha2
+kind: Process
+metadata:
+  name: process-sample-2
+spec:
+  value: any2
+---
+apiVersion: day3.cloud/v1beta1
+kind: Process
+metadata:
+  name: process-sample-3
+spec:
+  value: any3
