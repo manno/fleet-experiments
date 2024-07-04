@@ -5,11 +5,11 @@ diff:
       apiVersion: day3.cloud/v1beta1
       kind: Process
       name: process-sample-3
-      namespace: fleet-local
+      namespace: default
       operations: [{"op": "remove", "path": "/spec/value"}]
     -
       apiVersion: day3.cloud/v1alpha2
       kind: Process
       name: process-sample-2
-      namespace: fleet-local
+      namespace: default
       operations: [{"op": "remove", "path": "/spec/value"}]
