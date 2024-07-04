@@ -1,0 +1,12 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: examples-path
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - examples
+  targetNamespace: fleet-local
+  targets:
+    - clusterSelector: {}
