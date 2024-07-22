@@ -6,3 +6,4 @@ metadata:
 data:
   test.properties: |
     foo=bar
+    bac=123
