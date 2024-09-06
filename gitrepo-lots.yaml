@@ -1,0 +1,140 @@
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: lots-a
+  namespace: fleet-default
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale
+  targetNamespace: lots-a
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: lots-b
+  namespace: fleet-default
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale
+  targetNamespace: lots-b
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: lots-c
+  namespace: fleet-default
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale
+  targetNamespace: lots-c
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: lots-d
+  namespace: fleet-default
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale
+  targetNamespace: lots-d
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: lots-e
+  namespace: fleet-default
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale
+  targetNamespace: lots-e
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: lots-f
+  namespace: fleet-default
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale
+  targetNamespace: lots-f
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: lots-g
+  namespace: fleet-default
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale
+  targetNamespace: lots-g
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: lots-h
+  namespace: fleet-default
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale
+  targetNamespace: lots-h
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: lots-i
+  namespace: fleet-default
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale
+  targetNamespace: lots-i
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: lots-j
+  namespace: fleet-default
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale
+  targetNamespace: lots-j
+  targets:
+    - clusterSelector: {}
