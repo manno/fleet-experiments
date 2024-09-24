@@ -1,0 +1,14 @@
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: many051
+  namespace: fleet-default
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale/lotsofbundles/one/config-chart
+  targetNamespace: many051
+  targets:
+    - clusterSelector: {}
