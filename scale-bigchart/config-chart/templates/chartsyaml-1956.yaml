@@ -3,7 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   labels:
-    app: foo-grafana
+    app: foo-grafana3
     chart: grafana-0.0.31
     heritage: Helm
     release: foo

@@ -143,12 +143,6 @@ kind: ConfigMap
 metadata:
   labels:
     app: jupyter-web-app
-    app.kubernetes.io/component: jupyter
-    app.kubernetes.io/instance: jupyter-web-app
-    app.kubernetes.io/managed-by: kfctl
-    app.kubernetes.io/name: jupyter-web-app
-    app.kubernetes.io/part-of: kubeflow
-    app.kubernetes.io/version: v0.6
     kustomize.component: jupyter-web-app
   name: jupyter-web-app-config
   namespace: kubeflow
