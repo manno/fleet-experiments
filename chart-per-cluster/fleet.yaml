@@ -7,8 +7,7 @@ targetCustomizations:
 - name: dev
   helm:
     values:
-      service:
-        enabled: true
+      service: true
   clusterSelector:
     matchLabels:
       env: dev
@@ -16,8 +15,7 @@ targetCustomizations:
 - name: test
   helm:
     values:
-      service:
-        enabled: false
+      service: false
   clusterSelector:
     matchLabels:
       env: test
