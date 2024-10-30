@@ -1,0 +1,13 @@
+{{- if .Values.service.enabled }}
+apiVersion: v1
+kind: Service
+metadata:
+  name: per-cluster
+spec:
+  ports:
+  - port: 6342
+    targetPort: 16527
+    name: required-name1
+  selector:
+    env: test
+{{- end }}

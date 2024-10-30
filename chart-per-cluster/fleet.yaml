@@ -1,0 +1,23 @@
+namespace: fleet-per-cluster
+
+helm:
+  chart: chart
+
+targetCustomizations:
+- name: dev
+  helm:
+    values:
+      service:
+        enabled: true
+  clusterSelector:
+    matchLabels:
+      env: dev
+
+- name: test
+  helm:
+    values:
+      service:
+        enabled: false
+  clusterSelector:
+    matchLabels:
+      env: test
