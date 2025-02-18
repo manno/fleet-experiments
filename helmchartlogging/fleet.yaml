@@ -2,12 +2,7 @@ helm:
   releaseName: rancher-monitoring
   valuesFiles:
     - ./chart/logging.yaml
-# ignore:
-#
-#   # Conditions to be ignored
-#   conditions:
-#
-#     # In this example a condition will be ignored if it contains
-#     # {"type": "Active", "status", "False"}
-#     - type: "Failed"
-#       status: "False"
+ignore:
+  conditions:
+    - type: "Failed"
+      status: "False"
