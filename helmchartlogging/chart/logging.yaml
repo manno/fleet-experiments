@@ -1,0 +1,48 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cattle-monitoring-system
+---
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  namespace: kube-system
+  name: rancher-monitoring-crd
+spec:
+  chart: rancher-monitoring-crd
+  repo: https://charts.rancher.io
+  targetNamespace: cattle-monitoring-system
+  version: 104.1.2+up57.0.3
+  valuesContent: |
+    global:
+      cattle:
+        psp:
+          enabled: false
+---
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  namespace: kube-system
+  name: rancher-monitoring
+spec:
+  chart: rancher-monitoring
+  repo: https://charts.rancher.io
+  targetNamespace: cattle-monitoring-system
+  version: 104.1.2+up57.0.3
+  valuesContent: |
+    nameOverride: rancher-monitoring
+    namespaceOverride: cattle-monitoring-system
+    rke2ControllerManager:
+      enabled: true
+    rke2IngressNginx:
+      enabled: true
+    rke2Scheduler:
+      enabled: true
+    rke2Proxy:
+      enabled: true
+    rke2Etcd:
+      enabled: true
+    global:
+      cattle:
+        psp:
+          enabled: false
