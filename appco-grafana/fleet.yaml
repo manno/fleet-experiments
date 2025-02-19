@@ -2,9 +2,6 @@ defaultNamespace: grafana
 helm:
   chart: oci://dp.apps.rancher.io/charts/grafana
   version: 8.10.0
-  # repo: oci://dp.apps.rancher.io/charts/
-  # chart: grafana
-  # version: 8.10.0
   values:
     image:
       pullPolicy: IfNotPresent
