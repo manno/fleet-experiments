@@ -5,3 +5,11 @@ helm:
   # repo: oci://dp.apps.rancher.io/charts/
   # chart: grafana
   # version: 8.10.0
+  values:
+    image:
+      pullPolicy: IfNotPresent
+      pullSecrets: [ "application-collection" ]
+      registry: dp.apps.rancher.io
+      repository: containers/grafana
+      sha: ''
+      tag: 11.3.1 # This may change depending on your version of the Chart
