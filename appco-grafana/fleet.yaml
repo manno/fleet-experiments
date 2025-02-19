@@ -1,5 +1,5 @@
 defaultNamespace: grafana
 helm:
-  repo: https://dp.apps.rancher.io/charts/
+  repo: oci://dp.apps.rancher.io/charts/
   chart: grafana
   version: 8.10.0
