@@ -15,7 +15,7 @@ spec:
   targets:
   - clusterSelector: {}
 
-# kubectl create secret generic helm --from-literal=username=<your-username-or-sa-username> --from-literal=password=<access-token-or-sa-token>
+# kubectl create secret -n fleet-local generic application-collection --from-literal=username=<your-username-or-sa-username> --from-literal=password=<access-token-or-sa-token>
 ---
 kind: Secret
 apiVersion: v1
