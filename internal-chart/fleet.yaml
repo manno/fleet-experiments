@@ -1,0 +1,12 @@
+defaultNamespace: default
+helm:
+  #chart:
+  values:
+    name: one
+  releaseName: foo
+
+targetCustomizations:
+- name: prod
+  clusterSelector:
+    matchLabels:
+      env: test
