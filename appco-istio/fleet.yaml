@@ -1,0 +1,11 @@
+defaultNamespace: istio
+helm:
+  chart: oci://dp.apps.rancher.io/charts/istio
+  version: 0.7.2
+  values:
+    image:
+      pullPolicy: IfNotPresent
+      pullSecrets: [ "application-collection" ]
+      registry: dp.apps.rancher.io
+      repository: containers/istio
+      tag: 1.2.5
