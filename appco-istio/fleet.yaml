@@ -1,4 +1,4 @@
-defaultNamespace: istio
+defaultNamespace: istio-system
 helm:
   chart: oci://dp.apps.rancher.io/charts/istio
   version: 0.7.2
