@@ -12,12 +12,10 @@ diff:
     kind: ValidatingWebhookConfiguration
     name: istio-validator-istio-system
     operations:
-    - {"op": "remove", "path":"/webhooks/0/clientConfig/caBundle"}
-    - {"op": "remove", "path":"/webhooks/0/rules"}
+    - {"op": "remove", "path":"/webhooks"}
 
   - apiVersion: admissionregistration.k8s.io/v1
     kind: ValidatingWebhookConfiguration
     name: istiod-default-validator
     operations:
-    - {"op": "remove", "path":"/webhooks/0/clientConfig/caBundle"}
-    - {"op": "remove", "path":"/webhooks/0/rules"}
+    - {"op": "remove", "path":"/webhooks"}
