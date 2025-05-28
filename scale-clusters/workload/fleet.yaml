@@ -1,6 +1,9 @@
 namespace: "workload1"
 
 targetCustomizations:
+- clusterGroup: group0
+  namespace: workload0
+
 - clusterGroup: group1
   namespace: workload1
 - clusterGroup: group2
