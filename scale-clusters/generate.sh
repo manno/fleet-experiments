@@ -11,9 +11,13 @@ for c in $(seq 1 3); do
 for i in $(seq 1 500); do
   id="$c-$i"
 
+#   cat >> workload/fleet.yaml  <<EOF
+# - clusterName: test-downstream$id
+#   namespace: workload$id
+# EOF
   cat >> workload/fleet.yaml  <<EOF
-- clusterName: test-downstream$id
-  namespace: workload$id
+- clusterGroup: group$i
+  namespace: workload$i
 EOF
 
 done
