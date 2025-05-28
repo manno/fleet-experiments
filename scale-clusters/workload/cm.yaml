@@ -5,3 +5,5 @@ metadata:
 data:
   001-general.conf: |
      some data
+  002-general.conf: |
+    some more data
