@@ -1,0 +1,7 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: example
+data:
+  001-general.conf: |
+     some data
