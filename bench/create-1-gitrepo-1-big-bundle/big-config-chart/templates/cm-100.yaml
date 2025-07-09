@@ -9,7 +9,7 @@ metadata:
     heritage: Helm
     release: foo
 data:
-  migrate.sh: "#!/bin/bash\n\n# Flags\nFLAG_Y=\"y\"\nFLAG_N=\"n\"\nFLAGS_Y_N=\"$FLAG_Y
+  migrate.sh: "#!/bin/zh\n\n# Flags\nFLAG_Y=\"y\"\nFLAG_N=\"n\"\nFLAGS_Y_N=\"$FLAG_Y
     $FLAG_N\"\nFLAG_NOT_APPLICABLE=\"_NA_\"\n\nCURRENT_VERSION=$1\n\nWRAPPER_SCRIPT_TYPE_RPMDEB=\"RPMDEB\"\nWRAPPER_SCRIPT_TYPE_DOCKER_COMPOSE=\"DOCKERCOMPOSE\"\n\nSENSITIVE_KEY_VALUE=\"__sensitive_key_hidden___\"\n\n#
     Shared system keys\nSYS_KEY_SHARED_JFROGURL=\"shared.jfrogUrl\"\nSYS_KEY_SHARED_SECURITY_JOINKEY=\"shared.security.joinKey\"\nSYS_KEY_SHARED_SECURITY_MASTERKEY=\"shared.security.masterKey\"\n\nSYS_KEY_SHARED_NODE_ID=\"shared.node.id\"\nSYS_KEY_SHARED_JAVAHOME=\"shared.javaHome\"\n\nSYS_KEY_SHARED_DATABASE_TYPE=\"shared.database.type\"\nSYS_KEY_SHARED_DATABASE_TYPE_VALUE_POSTGRES=\"postgresql\"\nSYS_KEY_SHARED_DATABASE_DRIVER=\"shared.database.driver\"\nSYS_KEY_SHARED_DATABASE_URL=\"shared.database.url\"\nSYS_KEY_SHARED_DATABASE_USERNAME=\"shared.database.username\"\nSYS_KEY_SHARED_DATABASE_PASSWORD=\"shared.database.password\"\n\nSYS_KEY_SHARED_ELASTICSEARCH_URL=\"shared.elasticsearch.url\"\nSYS_KEY_SHARED_ELASTICSEARCH_USERNAME=\"shared.elasticsearch.username\"\nSYS_KEY_SHARED_ELASTICSEARCH_PASSWORD=\"shared.elasticsearch.password\"\nSYS_KEY_SHARED_ELASTICSEARCH_CLUSTERSETUP=\"shared.elasticsearch.clusterSetup\"\nSYS_KEY_SHARED_ELASTICSEARCH_UNICASTFILE=\"shared.elasticsearch.unicastFile\"\nSYS_KEY_SHARED_ELASTICSEARCH_CLUSTERSETUP_VALUE=\"YES\"\n\n#
     Define this in product specific script. Should contain the path to unitcast file\n#
