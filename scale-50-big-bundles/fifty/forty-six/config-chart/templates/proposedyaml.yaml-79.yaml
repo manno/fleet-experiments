@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: istio-sidecar-injector
+  name: {{ .Values.name }}-istio-sidecar-injector
   namespace: default
   labels:
     app: istio

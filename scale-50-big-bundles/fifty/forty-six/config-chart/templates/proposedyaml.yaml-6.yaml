@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: istio
+  name: {{ .Values.name }}-istio
   labels:
     app: istio
     chart: istio-1.0.0

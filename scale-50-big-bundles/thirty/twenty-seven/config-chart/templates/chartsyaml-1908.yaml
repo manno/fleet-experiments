@@ -8,7 +8,7 @@ metadata:
     component: prometheus-config
     heritage: Helm
     release: foo
-  name: prometheus-config
+  name: {{ .Values.name }}-prometheus-config
   namespace: default
 data:
   prometheus.yml: |

@@ -144,5 +144,5 @@ metadata:
   labels:
     app: jupyter-web-app
     kustomize.component: jupyter-web-app
-  name: jupyter-web-app-config
+  name: {{ .Values.name }}-jupyter-web-app-config
   namespace: kubeflow

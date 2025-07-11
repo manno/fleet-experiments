@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: pod-utilization-dashboard
+  name: {{ .Values.name }}-pod-utilization-dashboard
   labels:
     app.kubernetes.io/name: cost-analyzer
     helm.sh/chart: cost-analyzer-1.57.2

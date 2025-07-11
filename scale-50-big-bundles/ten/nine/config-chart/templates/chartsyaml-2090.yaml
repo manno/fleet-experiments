@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: foo-spark-config
+  name: {{ .Values.name }}-foo-spark-config
   labels:
     app: foo-hbase
     chart: hbase-0.0.1

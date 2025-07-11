@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: cpx-istio-sidecar-injector1
+  name: {{ .Values.name }}-cpx-istio-sidecar-injector1
   namespace: default
   labels:
     app: cpx-sidecar-injector

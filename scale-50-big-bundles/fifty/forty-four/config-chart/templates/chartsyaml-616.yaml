@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: foo-hadoop
+  name: {{ .Values.name }}-foo-hadoop
   labels:
     app: hadoop
     chart: hadoop-1.0.7

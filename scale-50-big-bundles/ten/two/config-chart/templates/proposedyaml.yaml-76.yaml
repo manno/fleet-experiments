@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: prometheus2
+  name: {{ .Values.name }}-prometheus2
   namespace: default
   labels:
     app: prometheus

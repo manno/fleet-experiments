@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: istio-galley-configuration
+  name: {{ .Values.name }}-istio-galley-configuration
   namespace: default
   labels:
     app: istio-galley

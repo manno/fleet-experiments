@@ -2,7 +2,7 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: hub-config
+  name: {{ .Values.name }}-hub-config
   labels:
     component: hub
     app: jupyterhub

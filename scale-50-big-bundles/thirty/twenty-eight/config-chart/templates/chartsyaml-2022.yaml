@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: foo-redis-health
+  name: {{ .Values.name }}-foo-redis-health
   namespace: default
   labels:
     app: redis

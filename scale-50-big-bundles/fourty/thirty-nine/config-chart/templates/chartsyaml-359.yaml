@@ -8,7 +8,7 @@ metadata:
     release: foo
     chart: prometheus-11.0.2
     heritage: Helm
-  name: foo-prometheus-server2
+  name: {{ .Values.name }}-foo-prometheus-server2
 data:
   alerting_rules.yml: "{}\n"
   alerts: "{}\n"

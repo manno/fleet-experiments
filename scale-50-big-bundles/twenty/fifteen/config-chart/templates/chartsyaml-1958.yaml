@@ -8,7 +8,7 @@ metadata:
     component: server
     heritage: Helm
     release: foo
-  name: foo-prometheus-server
+  name: {{ .Values.name }}-foo-prometheus-server
 data:
   alerts: "{}\n"
   prometheus.yml: |

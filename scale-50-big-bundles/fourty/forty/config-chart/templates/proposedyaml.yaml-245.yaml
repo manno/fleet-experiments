@@ -58,5 +58,5 @@ metadata:
   annotations: {}
   labels:
     kustomize.component: admission-webhook-bootstrap
-  name: admission-webhook-bootstrap-config-map
+  name: {{ .Values.name }}-admission-webhook-bootstrap-config-map
   namespace: kubeflow

@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: foo-fluentd-aggregator
+  name: {{ .Values.name }}-foo-fluentd-aggregator
   labels:
     app: fluentd-aggregator
     chart: fluentd-aggregator-0.2.1

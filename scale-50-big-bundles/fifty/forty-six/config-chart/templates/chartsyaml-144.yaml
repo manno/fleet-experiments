@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: foo-artifactory-migration-scripts
+  name: {{ .Values.name }}-foo-artifactory-migration-scripts
   labels:
     app: artifactory
     chart: artifactory-9.5.0

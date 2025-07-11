@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: istio-mixer-custom-resources
+  name: {{ .Values.name }}-istio-mixer-custom-resources
   labels:
     app: istio-mixer
     chart: mixer-0.5.0

@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: foo-kibana-nginx
+  name: {{ .Values.name }}-foo-kibana-nginx
   namespace: default
   labels:
     app: kibana

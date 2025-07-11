@@ -2,7 +2,7 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: foo-artifactory-ha-isc-groovy
+  name: {{ .Values.name }}-foo-artifactory-ha-isc-groovy
   labels:
     app: artifactory-ha
     chart: artifactory-ha-0.2.2
