@@ -1,0 +1,65 @@
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: scale-50-fifty
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale-50-big-bundles/fifty
+  targetNamespace: scale-fifty
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: scale-50-fourty
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale-50-big-bundles/fourty
+  targetNamespace: scale-fourty
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: scale-50-ten
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale-50-big-bundles/ten
+  targetNamespace: scale-ten
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: scale-50-thirty
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale-50-big-bundles/thirty
+  targetNamespace: scale-thirty
+  targets:
+    - clusterSelector: {}
+---
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: scale-50-twenty
+spec:
+  repo: https://github.com/manno/fleet-experiments
+  branch: main
+  paths:
+    - scale-50-big-bundles/twenty
+  targetNamespace: scale-twenty
+  targets:
+    - clusterSelector: {}

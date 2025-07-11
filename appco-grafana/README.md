@@ -37,3 +37,22 @@ type: kubernetes.io/dockerconfigjson
 data:
   .dockerconfigjson: ...
 ```
+
+
+### K3D
+
+
+registries.yaml:
+```
+mirrors:
+  "dp.apps.rancher.io":
+    endpoint:
+      - oci://dp.apps.rancher.io
+configs:
+  "dp.apps.rancher.io":
+    auth:
+      username: <username>
+      password: <password>
+```
+
+k3d cluster create downstream1 --registry-config registries.yaml
