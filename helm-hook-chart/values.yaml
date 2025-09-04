@@ -1,0 +1,6 @@
+timezone: UTC
+jobTtl: 300  # Cleanup migration job after 5 minutes
+image:
+  repository: registry.suse.com/bci/bci-busybox
+  pullPolicy: IfNotPresent
+  tag: "15.7"

@@ -1,0 +1,33 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: install-hook
+  labels:
+    app.kubernetes.io/component: install
+  annotations:
+    "helm.sh/hook": pre-install
+    "helm.sh/hook-weight": "1"
+    "helm.sh/hook-delete-policy": before-hook-creation,hook-succeeded
+spec:
+  ttlSecondsAfterFinished: {{ .Values.jobTtl }}
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/component: install
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: install
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command:
+            - /bin/sh
+            - -c
+            - |
+              echo "$TZ"
+              echo "$test"
+          envFrom:
+            - configMapRef:
+                name: install-config
+            - configMapRef:
+                name: config
