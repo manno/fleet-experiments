@@ -4,3 +4,4 @@ metadata:
   name: test-config-{{ .Values.name }}
 data:
   name: {{ .Values.name }}
+  test: me
