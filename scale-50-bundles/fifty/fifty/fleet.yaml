@@ -4,3 +4,4 @@ helm:
   values:
     name: fifty
     test: is-on
+    extra: testvalue

@@ -4,3 +4,4 @@ helm:
   values:
     name: fourteen
     extra: value
+    extra: testvalue

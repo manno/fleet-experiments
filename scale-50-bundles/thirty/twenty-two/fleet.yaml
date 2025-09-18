@@ -3,3 +3,4 @@ helm:
   chart: config-chart
   values:
     name: twenty-two
+    extra: testvalue

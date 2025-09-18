@@ -5,3 +5,4 @@ metadata:
 data:
   name: {{ .Values.name }}
   extra: {{ .Values.extra }}
+  extra: {{ .Values.extra }}
