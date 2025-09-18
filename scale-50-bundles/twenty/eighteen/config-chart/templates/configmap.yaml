@@ -4,4 +4,3 @@ metadata:
   name: test-config-{{ .Values.name }}
 data:
   name: {{ .Values.name }}
-  extra: {{ .Values.extra }}
