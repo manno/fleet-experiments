@@ -5,6 +5,3 @@ helm:
     name: fifty
     test: is-on
     extra: testvalue
-rolloutStrategy:
-  maxUnavailable: 100%
-  autoPartitionSize: 100%

@@ -4,6 +4,3 @@ helm:
   values:
     name: thirty-nine
     extra: testvalue
-rolloutStrategy:
-  maxUnavailable: 100%
-  autoPartitionSize: 100%
