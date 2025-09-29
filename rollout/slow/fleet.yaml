@@ -1,0 +1,4 @@
+rolloutStrategy:
+  maxUnavailable: 10%
+  maxUnavailablePartitions: 1
+  autoPartitionSize: 10%
